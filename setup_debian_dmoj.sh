@@ -26,4 +26,4 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 apt update && apt install yarn -y
 wget http://repo.mysql.com/mysql-apt-config_0.8.13-1_all.deb
 sudo dpkg -i mysql-apt-config_0.8.13-1_all.deb
-apt update && apt install mysql-server -y
+apt update && apt install mysql-server libmysqlclient-dev -y
