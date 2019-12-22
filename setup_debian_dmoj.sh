@@ -12,7 +12,7 @@ sudo sysctl vm.vfs_cache_pressure=50
 sudo echo 'vm.swappiness=10' | sudo tee -a /etc/sysctl.conf
 sudo echo 'vm.vfs_cache_pressure=50' | sudo tee -a /etc/sysctl.conf
 
-apt install python3-venv python3-pip
+apt install python3-venv python3-pip -y
 
 pip3 install --user awscli
 env | grep PATH
